@@ -1,0 +1,6 @@
+FROM adoptopenjdk/openjdk11:latest
+MAINTAINER Kiran
+RUN mkdir /opt/app
+COPY userDOBInfo-0.0.1-SNAPSHOT.jar /opt/app
+EXPOSE 8080
+CMD ["java", "-jar", "/opt/app/userDOBInfo-0.0.1-SNAPSHOT.jar"]
